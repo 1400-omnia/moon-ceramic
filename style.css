@@ -115,3 +115,108 @@ body {
         gap: 15px;
     }
 }
+/* =========================
+   Collection
+========================= */
+
+.collection {
+    padding: 55px 0;
+    background-color: #ffffff;
+}
+
+.collection-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.collection-item {
+    flex: 1;
+    text-align: center;
+}
+
+.collection-item img {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.collection-item h3 {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+
+/* =========================
+   Collection
+========================= */
+
+.collection {
+    padding: 65px 0;
+    background-color: #ffffff;
+}
+
+.collection-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.collection-item {
+    flex: 1;
+    text-align: center;
+}
+
+.collection-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    transition: transform 0.3s ease;
+}
+
+.collection-item:hover img {
+    transform: translateY(-5px);
+}
+
+.collection-item h3 {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+
+/* =========================
+   Collection Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .collection {
+        padding: 45px 0;
+    }
+
+    .collection-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .collection-item {
+        width: 100%;
+    }
+
+    .collection-item img {
+        aspect-ratio: 1 / 1;
+    }
+
+    .collection-item h3 {
+        font-size: 11px;
+    }
+}
